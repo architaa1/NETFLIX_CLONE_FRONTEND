@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles_2.css">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <img src="wall.png" alt="movie title image" class="title-img">
+            <p> Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.</p>
+            <div class="buttons">
+                <button class="btn play" aria-label="Play">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                    Play
+                </button>
+                <button class="btn more-info" aria-label="More Info">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                    More Info
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="left-nav">
+            <a href="/browse" class="logo">
+                <img src="LOGO.png" alt="netflix logo">
+            </a>
+            <ul class="navigation">
+                <li><a href="/browse">Home</a></li>
+                <li><a href="/browse/genre/83">TV Shows</a></li>
+                <li><a href="/browse/genre/34399">Movies</a></li>
+                <li><a href="/latest">New & Popular</a></li>
+                <li><a href="/browse/my-list">My List</a></li>
+                <li><a href="/browse">Browse by Language</a></li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <button class="icon-search" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 40 40">
+                    <linearGradient id="-2suTD81jP2ew0CFO8L6Qa_p8VkXMjDOpcE_gr1" x1="31.916" x2="25.088" y1="31.849" y2="26.05" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b2b2b2"></stop><stop offset=".999"></stop></linearGradient><polygon fill="url(#-2suTD81jP2ew0CFO8L6Qa_p8VkXMjDOpcE_gr1)" points="29.976,27 24.451,27.176 33.95,36.778 36.778,33.95"></polygon><path fill="#b2b2b2" d="M24.313,27c-1.788,1.256-3.962,2-6.313,2c-6.075,0-11-4.925-11-11S11.925,7,18,7s11,4.925,11,11	c0,2.659-0.944,5.098-2.515,7h4.776C32.368,22.909,33,20.53,33,18c0-8.284-6.716-15-15-15S3,9.716,3,18c0,8.284,6.716,15,15,15	c4.903,0,9.243-2.363,11.98-6H24.313z"></path>
+                    </svg>             
+            </button>
+
+            <a href="/Kids">Children</a>
+            <button class="icon-bell" aria-label="Notification">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                  </svg>    
+                <span class="notification-count">3</span>
+            </button>
+
+            <div class="profile">
+                <img src="user.jpg" alt="profile image" class="profile-pic">
+                <div class="dropdown">
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li class="seperator"></li>
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>           
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
